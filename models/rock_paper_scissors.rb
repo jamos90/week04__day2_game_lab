@@ -5,6 +5,7 @@ class Game
  end
 
   def play_game()
+
     if (@move1 == 'rock' && @move2 == 'scissors') || (@move1 == 'scissors' && @move2 == 'rock')
       return "Rock wins"
     elsif
@@ -15,7 +16,7 @@ class Game
       return "Scissors wins"
     else
       @move1 == @move2
-      return "Try again!"
+      return "Draw!"
     end
   end
 
